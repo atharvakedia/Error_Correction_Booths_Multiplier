@@ -1,7 +1,7 @@
-# Booth's Multiplication Algorithm & Error Correction
+# Booth's Multiplication Algorithm
 
 ## Overview
-This project involves designing, implementing, and simulating **Booth's Multiplication Algorithm** using Verilog, along with an **Error Correction Mechanism**. The design is structured into two parts:
+This project involves designing, implementing, and simulating **Booth's Multiplication Algorithm** using Verilog. The design is structured into two parts:
 
 1. **Booth's Multiplication Implementation:** Implements Booth's multiplication algorithm using digital logic.
 2. **Error Correction Using Booth's Logic:** Extends the design to correct errors using Booth's multiplication logic.
@@ -10,7 +10,7 @@ This repository contains all necessary Verilog modules, testbenches, and simulat
 
 ---
 
-## Part 1: Booth's Multiplication Logic
+## Booth's Multiplication Logic
 Booth's multiplication algorithm efficiently multiplies signed binary numbers by encoding runs of `1`s in the multiplier to minimize additions/subtractions.
 
 ### **Booth's Multiplication Decision Table**
@@ -24,7 +24,7 @@ Booth's multiplication algorithm efficiently multiplies signed binary numbers by
 
 ---
 
-## Main Module: BoothsMultiplierPart4
+## Main Module: BoothsMultiplierPart1
 This is the main module that integrates the Booth's multiplication algorithm with digital logic implementation.
 
 #### **Ports Table**
@@ -40,7 +40,7 @@ This is the main module that integrates the Booth's multiplication algorithm wit
 
 ---
 
-## Embedded Modules for Booth's Multiplication
+## Embedded Modules
 
 ### **Control Unit**
 The Control Unit orchestrates the multiplication process by generating necessary control signals.
@@ -72,3 +72,19 @@ This module manages bitwise shifts necessary for the multiplication process.
 | **OUTPUT**        | `DATA_OUT`    | -          | 13                   | Output stored in the shift register |
 
 ---
+
+## Implementation Steps
+1. **Understand Booth's algorithm** and its encoding scheme.
+2. **Develop the Verilog modules** for Booth's Multiplier, Control Unit, and Shifter.
+3. **Write a testbench** to simulate different multiplication cases.
+4. **Analyze waveforms** to verify correct operation.
+
+---
+
+## Simulation & Testing
+
+### Steps to Simulate
+1. **Clone Repository**
+   ```bash
+   git clone <repository-url>
+   cd booths_multiplier
